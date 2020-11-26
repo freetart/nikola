@@ -1,0 +1,23 @@
+// FONTS
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+// GLOBAL
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Staatliches", cursive;
+}

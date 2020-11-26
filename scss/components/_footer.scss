@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #000;
+  text-align: center;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include response(sm) {
+      flex-direction: column;
+    }
+  }
+
+  li {
+    margin: 0.5rem;
+  }
+
+  a {
+    margin: 2rem;
+    font-size: size(sm);
+    color: color(lightGray);
+    transition: color 0.3s;
+
+    &:hover {
+      color: color(redColor);
+    }
+  }
+}

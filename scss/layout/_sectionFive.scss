@@ -1,0 +1,6 @@
+.section-five {
+  @include sectionLayout();
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("./images/house1.jpg") center/cover no-repeat;
+}

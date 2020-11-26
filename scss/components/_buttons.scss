@@ -1,0 +1,54 @@
+.btn {
+  cursor: pointer;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+  font-size: size(sm);
+  width: 20rem;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 0.2rem;
+  box-shadow: 0.1rem 0.1rem 1rem #fff;
+
+  @include response(md) {
+    width: 15rem;
+  }
+
+  @include response(sm) {
+    width: 12rem;
+    font-size: size(xs);
+  }
+}
+
+.btn-dark {
+  background-color: color(lightBlack);
+  color: color(lightGray);
+  transition: all 0.3s;
+  margin-right: 5rem;
+  border: 0.2rem solid color(lightGray);
+
+  @include response(md) {
+    margin-right: 2rem;
+  }
+
+  &:hover {
+    background-color: color(lightGray);
+    color: color(lightBlack);
+    border: 0.2rem solid #000;
+    transform: skewY(5deg) scale(1.1);
+  }
+}
+
+.btn-light {
+  background-color: color(lightGray);
+  color: color(lightBlack);
+  transition: all 0.3s;
+  border: 0.2rem solid #000;
+
+  &:hover {
+    background-color: color(lightBlack);
+    color: color(lightGray);
+    border: 0.2rem solid color(lightGray);
+    transform: skewY(-5deg) scale(1.1);
+  }
+}
